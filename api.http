@@ -1,0 +1,34 @@
+# # Recuperar todas las peliculas (ruta /movies)
+# GET http://localhost:3000/movies
+
+# # Recuperar peliculas por ID
+# GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+# Recuperar peliculas por genero con query params
+# GET http://localhost:3000/movies?genre=action
+
+# Crear una pelicula con POST
+# POST http://localhost:3000/movies
+# Content-Type: application/json
+
+# {
+#         "title": "The Godfather",
+#         "year": 1974,
+#         "director": "juanito Darabont",
+#         "duration": 142,
+#         "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+#         "genre": [
+#             "Drama",
+#             "Crime"
+#         ]
+# }
+
+# Actualizar una pelicula
+
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 1314,
+    "title": "hola"
+}
